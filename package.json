@@ -1,0 +1,34 @@
+{
+  "name": "world-timestamp",
+  "version": "1.0.0",
+  "description": "Provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org/.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MugiSus/world-timestamp.git"
+  },
+  "keywords": [
+    "world",
+    "global",
+    "time",
+    "worldtime",
+    "worldtimeapi",
+    "timestamp",
+    "microseconds",
+    "milliseconds",
+    "clock"
+  ],
+  "author": "MugiSus (https://github.com/MugiSus)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MugiSus/world-timestamp/issues"
+  },
+  "homepage": "https://github.com/MugiSus/world-timestamp#readme",
+  "devDependencies": {
+    "ava": "^4.3.3",
+    "isomorphic-unfetch": "^3.1.0"
+  }
+}
