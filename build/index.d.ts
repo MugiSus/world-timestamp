@@ -17,8 +17,8 @@ interface DateTimeJsonResponse {
 }
 interface WorldTimestamp {
     response: DateTimeJsonResponse;
-    timestamp: number;
-    utcTimestamp: number;
+    milliseconds: number;
+    utcMilliseconds: number;
     microseconds: number;
     utcMicroseconds: number;
 }

@@ -25,8 +25,8 @@ const worldTimestamp = (timezone = 'Etc/UTC') => __awaiter(void 0, void 0, void 
     const microseconds = utcMicroseconds + json.raw_offset * 1000000;
     return {
         response: json,
-        timestamp: microseconds / 1000,
-        utcTimestamp: utcMicroseconds / 1000,
+        milliseconds: microseconds / 1000,
+        utcMilliseconds: utcMicroseconds / 1000,
         microseconds: microseconds,
         utcMicroseconds: utcMicroseconds,
     };
