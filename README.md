@@ -16,7 +16,7 @@ const getUTCTimestamp = async () => {
     const timestamp = await worldTimestamp("Asia/Tokyo");
 
     console.log(timestamp.response); // returns worldtimeapi.org response
-    console.log(timestamp.response.datetime); // 2022-10-01T18:00:00.123456+09:00
+    console.log(timestamp.response.datetime); // Ex. 2022-10-01T18:00:00.123456+09:00
 
     console.log(timestamp.milliseconds); // 1664614800123.456
     console.log(timestamp.utcMilliseconds); // 1664647200123.456
@@ -25,7 +25,6 @@ const getUTCTimestamp = async () => {
     console.log(timestamp.utcMicroseconds); // 1664647200123456
 };
 ```
-You can find all timezones here: https://worldtimeapi.org/timezones
 
 # References
 
@@ -34,6 +33,8 @@ You can find all timezones here: https://worldtimeapi.org/timezones
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `timezone` | `string` | Timezone. Default: `"Etc/UTC"` |
+
+You can find all available timezones here: https://worldtimeapi.org/timezones
 
 ### WorldTimestamp
 
@@ -69,3 +70,5 @@ see more in https://worldtimeapi.org/pages/schema
 
 # License
 MIT License © 2022 [MugiSus](https://github.com/MugiSus)
+
+Feel free to contact me if you have any questions or suggestions.
