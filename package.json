@@ -30,5 +30,8 @@
   "devDependencies": {
     "ava": "^4.3.3",
     "isomorphic-unfetch": "^3.1.0"
+  },
+  "dependencies": {
+    "typescript": "^4.8.4"
   }
 }
