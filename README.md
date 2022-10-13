@@ -1,6 +1,9 @@
 # world-timestamp
-Provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org/.  \
-Totally independent of the local system clock.
+Provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org/.
+
+- Totally independent of the local system clock.
+- Capable of next.js, nuxt.js or any react projects.
+- Supports various timezones. (See [worldtimeapi/timezones](https://worldtimeapi.org/timezones))
 
 # Installation
 ```bash
@@ -56,9 +59,9 @@ You can find all available timezones here: https://worldtimeapi.org/timezones
 | `day_of_week` | `number` | Day of the week |
 | `day_of_year` | `number` | Day of the year |
 | `dst` | `boolean` | Is daylight saving time in effect? |
-| `dst_from` | `string` | Daylight saving time start date |
+| `dst_from` | `string` | Date daylight saving time starts |
 | `dst_offset` | `number` | Daylight saving time offset |
-| `dst_until` | `string` | Daylight saving time end date |
+| `dst_until` | `string` | Date daylight saving time ends |
 | `raw_offset` | `number` | Timezone offset from UTC including daylight saving time |
 | `timezone` | `string` | Timezone |
 | `unixtime` | `number` | Timestamp in seconds |
