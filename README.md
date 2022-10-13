@@ -1,6 +1,6 @@
 # world-timestamp
-This API provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org/.  \
-**Completely independent of the system clock.**
+Provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org/.  \
+Totally independent of the local system clock.
 
 # Installation
 ```bash
@@ -43,8 +43,8 @@ You can find all available timezones here: https://worldtimeapi.org/timezones
 | `response` | `WorldTimeApiResponse` | Worldtimeapi.org response |
 | `milliseconds` | `number` | Timestamp in milliseconds |
 | `utcMilliseconds` | `number` | Timestamp in milliseconds in UTC |
-| `microseconds` | `number` | Timestamp in microseconds |
-| `utcMicroseconds` | `number` | Timestamp in microseconds in UTC |
+| `microseconds` | `number`(intager) | Timestamp in microseconds |
+| `utcMicroseconds` | `number`(intager) | Timestamp in microseconds in UTC |
 
 ### WorldTimeApiResponse
 
@@ -59,7 +59,7 @@ You can find all available timezones here: https://worldtimeapi.org/timezones
 | `dst_from` | `string` | Daylight saving time start date |
 | `dst_offset` | `number` | Daylight saving time offset |
 | `dst_until` | `string` | Daylight saving time end date |
-| `raw_offset` | `number` | Timezone offset including daylight saving time |
+| `raw_offset` | `number` | Timezone offset from UTC including daylight saving time |
 | `timezone` | `string` | Timezone |
 | `unixtime` | `number` | Timestamp in seconds |
 | `utc_datetime` | `string` | Timestamp in ISO 8601 format in UTC |
