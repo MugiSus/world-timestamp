@@ -2,7 +2,8 @@
   "name": "world-timestamp",
   "version": "1.0.0",
   "description": "Provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org/.",
-  "main": "index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "ava -v"
   },
