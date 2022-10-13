@@ -20,10 +20,11 @@ interface DateTimeJsonResponse {
 
 interface WorldTimestamp {
     response: DateTimeJsonResponse;
-    microseconds: number;
-    utcMicroseconds: number;
+    timestamp: number;
     milliseconds: number;
     utcMilliseconds: number;
+    microseconds: number;
+    utcMicroseconds: number;
 }
 
 const worldTimestamp = async (timezone: string = 'Etc/UTC'): Promise<WorldTimestamp> => {
@@ -43,10 +44,11 @@ const worldTimestamp = async (timezone: string = 'Etc/UTC'): Promise<WorldTimest
 
     return {
         response: json,
-        microseconds: microseconds,
-        utcMicroseconds: utcMicroseconds,
+        timestamp: microseconds / 1000,
         milliseconds: microseconds / 1000,
         utcMilliseconds: utcMicroseconds / 1000,
+        microseconds: microseconds,
+        utcMicroseconds: utcMicroseconds,
     };
 }
 
