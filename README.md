@@ -33,7 +33,7 @@ You can find all timezones here: https://worldtimeapi.org/timezones
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `timezone` | `string` | Timezone. Default: `Etc/UTC` |
+| `timezone` | `string` | Timezone. Default: `"Etc/UTC"` |
 
 ### WorldTimestampResponse
 
@@ -47,8 +47,6 @@ You can find all timezones here: https://worldtimeapi.org/timezones
 
 ### WorldTimeApiResponse
 
-see https://worldtimeapi.org/pages/schema
-
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | `abbreviation` | `string` | Abbreviation of the timezone |
@@ -60,12 +58,14 @@ see https://worldtimeapi.org/pages/schema
 | `dst_from` | `string` | Daylight saving time start date |
 | `dst_offset` | `number` | Daylight saving time offset |
 | `dst_until` | `string` | Daylight saving time end date |
-| `raw_offset` | `number` | Timezone offset |
+| `raw_offset` | `number` | Timezone offset including daylight saving time |
 | `timezone` | `string` | Timezone |
 | `unixtime` | `number` | Timestamp in seconds |
 | `utc_datetime` | `string` | Timestamp in ISO 8601 format in UTC |
-| `utc_offset` | `string` | Timezone offset in UTC |
+| `utc_offset` | `string` | Timezone offset from UTC |
 | `week_number` | `number` | Week number |
+
+see https://worldtimeapi.org/pages/schema
 
 # License
 MIT License © 2022 [MugiSus](https://github.com/MugiSus)
