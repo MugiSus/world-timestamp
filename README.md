@@ -29,13 +29,13 @@ You can find all timezones here: https://worldtimeapi.org/timezones
 
 # References
 
-### worldTimestamp(timezone?: string): Promise\<WorldTimestampResponse\>
+### worldTimestamp(timezone?: string): Promise\<WorldTimestamp\>
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `timezone` | `string` | Timezone. Default: `"Etc/UTC"` |
 
-### WorldTimestampResponse
+### WorldTimestamp
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -65,7 +65,7 @@ You can find all timezones here: https://worldtimeapi.org/timezones
 | `utc_offset` | `string` | Timezone offset from UTC |
 | `week_number` | `number` | Week number |
 
-see https://worldtimeapi.org/pages/schema
+see more in https://worldtimeapi.org/pages/schema
 
 # License
 MIT License © 2022 [MugiSus](https://github.com/MugiSus)
