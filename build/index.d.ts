@@ -17,10 +17,10 @@ interface DateTimeJsonResponse {
 }
 interface WorldTimestamp {
     response: DateTimeJsonResponse;
+    timestamp: number;
+    utcTimestamp: number;
     microseconds: number;
     utcMicroseconds: number;
-    milliseconds: number;
-    utcMilliseconds: number;
 }
 declare const worldTimestamp: (timezone?: string) => Promise<WorldTimestamp>;
 export default worldTimestamp;
