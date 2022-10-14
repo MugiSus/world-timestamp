@@ -37,7 +37,7 @@ const worldTimestamp = async (timezone: string = 'Etc/UTC'): Promise<WorldTimest
 
     const utcDatetime = json.utc_datetime;
 
-    const datetimeMicrosecond = +utcDatetime.match(/\.\d{3}(\d*?)\+/)![1];
+    const datetimeMicrosecond = +utcDatetime.match(/\.\d{3}(\d*?)[+Z]/)![1];
     const utcMicroseconds = new Date(utcDatetime).getTime() * 1000 + datetimeMicrosecond;
     const microseconds = utcMicroseconds + json.raw_offset * 1000000;
 

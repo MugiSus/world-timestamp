@@ -20,7 +20,7 @@ const worldTimestamp = (timezone = 'Etc/UTC') => __awaiter(void 0, void 0, void 
     if (status >= 400)
         throw Error(res.statusText);
     const utcDatetime = json.utc_datetime;
-    const datetimeMicrosecond = +utcDatetime.match(/\.\d{3}(\d*?)\+/)[1];
+    const datetimeMicrosecond = +utcDatetime.match(/\.\d{3}(\d*?)[+Z]/)[1];
     const utcMicroseconds = new Date(utcDatetime).getTime() * 1000 + datetimeMicrosecond;
     const microseconds = utcMicroseconds + json.raw_offset * 1000000;
     return {
