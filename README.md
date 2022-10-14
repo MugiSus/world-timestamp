@@ -1,5 +1,5 @@
 # world-timestamp
-Provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org/.
+Provides UTC (or any timezone) time in microseconds and milliseconds from https://worldtimeapi.org.
 
 - Totally independent of the local system clock.
 - Capable of next.js, nuxt.js or any react projects.
